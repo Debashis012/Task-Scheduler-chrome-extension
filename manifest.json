@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Project Management Extension",
+  "version": "1.0",
+  "description": "Plan, schedule, assign & track progress of tasks",
+  "permissions": [
+    "storage",
+    "identity"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "oauth2": {
+    "client_id": "852087384989-i0g0n0640js7tshjjlvotmigtvrvlh6q.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div id="sign-in-section">
+    <button id="sign-in-button">Sign In with Google</button>
+  </div>
+  <div id="dashboard" style="display: none;">
+    <h1>Welcome Champ!</h1>
+    <button id="sign-out-button">Sign Out</button>
+    <section id="user-info">
+      <h2>You signed in as:</h2>
+      <p id="email">Loading...</p>
+    </section>
+    <section id="tasks">
+      <h2>Plan Your Day</h2>
+      <ul id="task-list"></ul>
+      
+      <!-- Task input -->
+      <input type="text" id="task-input" placeholder="New task">
+      
+      <!-- New time input fields -->
+      <label for="task-start-time">Start Time:</label>
+      <input type="datetime-local" id="task-start-time">
+      
+      <label for="task-end-time">End Time:</label>
+      <input type="datetime-local" id="task-end-time">
+
+      <button id="add-task-button">Add Task</button>
+    </section>
+  </div>
+</body>
+</html>

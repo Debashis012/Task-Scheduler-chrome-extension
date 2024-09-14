@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+  font-family: 'Cursive', sans-serif;
+  width: 300px;
+  padding: 10px;
+  margin: 0;
+  background-color: #f4f4f4; /* Light background color for better contrast */
+}
+
+/* Dashboard styling */
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; /* Rounded corners */
+  background: linear-gradient(to bottom right, #cfe143, #0dd7e1); /* Gradient background */
+  padding: 20px;
+  position: relative;
+  
+}
+
+#dashboard::before {
+  top: -10px; /* Adjusted to fit within the dashboard */
+  left: -10px;
+}
+
+#dashboard::after {
+  bottom: -10px; /* Adjusted to fit within the dashboard */
+  right: -10px;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 20px;
+}
+
+/* Task input styling */
+#task-input {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 8px;
+  border: 1px solid 0000ff; /* Light border color */
+  border-radius: 4px;
+  background-color: #fff; /* White background for input field */
+  font-size: 14px;
+  margin-bottom: 10px; /* Space below the input field */
+}
+
+
+input[type="datetime-local"] {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 8px;
+  border: 2px solid #0000ff; /* Light border color */
+  border-radius: 4px;
+  background-color: #fff; /* White background for input fields */
+  font-size: 14px;
+  margin-bottom: 10px; /* Space below the input fields */
+}
+
+/* Focus state for time inputs */
+input[type="datetime-local"]:focus {
+  border-color: #4314b8; /* Highlight border color */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff; /* White text color for buttons */
+  background-color: #11bde3; /* Button background color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0a9fb2; /* Darker shade for hover effect */
+}
+
+/* Button wrapper styling */
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between buttons */
+}
+
+/* Task button styling */
+.task-button {
+  margin-right: 0; /* Remove margin as spacing is handled by button-wrapper */
+}
